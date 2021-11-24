@@ -222,7 +222,7 @@ class PassGen:
                 i = 0
                 while(i < self.max_count):
                     if not self.silent:
-                        print(f'Writing additional combinations ... {}/{}'.format(i*3, self.max_count*3))
+                        print('Writing additional combinations ... {}/{}'.format(i*3, self.max_count*3))
                     f.write('{}{}\n'.format(self.target['firstname'], i))
                     f.write('{}{}\n'.format(self.target['lastname'], i))
                     f.write('{}{}\n'.format(self.target['nickname'], i))
